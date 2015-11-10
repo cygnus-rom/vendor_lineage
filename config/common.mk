@@ -18,6 +18,11 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.config.notification_sound=Argon.ogg \
     ro.config.alarm_alert=Hassium.ogg
 
+ifneq ($(TARGET_BUILD_VARIANT),user)
+# Thank you, please drive thru!
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.dun.override=0
+endif
+
 # Disable ADB authentication
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=0
 
