@@ -160,9 +160,7 @@ PRODUCT_PACKAGES += \
 
 # Themes
 PRODUCT_PACKAGES += \
-    LineageThemesStub \
-    ThemePicker
-
+    LineageThemesStub 
 # Extra tools in Lineage
 PRODUCT_PACKAGES += \
     7z \
