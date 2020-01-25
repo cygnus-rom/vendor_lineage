@@ -9,3 +9,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGE_OVERLAYS += vendor/lineage/overlay/dictionaries
 
 $(call inherit-product, vendor/lineage/config/telephony.mk)
+
+# Inherit cygnus config.mk
+$(call inherit-product, vendor/cygnus/configs/config.mk)
